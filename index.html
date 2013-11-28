@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Club Form</title>
+<link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<img src="img/banner-02.svg">
+	</header>
+
+<form>
+	<div>
+		<label for="name">
+		Name
+		<strong class="error">Please fill all the following.</strong>
+		</label>
+		<input type="text" id="name" class="input-text input-error" required>
+	</div>
+	
+	<div>
+		<label for="email">E-mail address</label>
+		<input type="email" id="email" class="input-text input-error" maxlength="256">
+	</div>
+	
+	<div>
+		<label for="number">Phone Number</label> 
+		<input type="phone" id="phone" class="input-text" placeholder="613-327-3753" maxlength="12">
+	</div>
+	
+	<div>
+		<label for="address">Address</label>
+		<input type="address" id="address" class="input-text input-error">
+	</div>
+	
+	<div>
+		<label for="city">City</label>
+		<input type="city" id="city" class="input-text input-error">
+	</div>
+	
+	<div>
+		<label for="province">Province</label>
+		<input type="province" id="province" class="input-text input-error">
+	</div>
+	
+	<div>
+		<label for="postalcode">Postal Code</label>
+		<input type="postalcode" id="postalcode" class="input-text input-error" maxlength="7">
+	</div>
+	
+	<div>
+	<label for="days">What time of day would be best to meet?</label>
+	<select id="dino" class="input-error">
+		<option>8am-10am</option>
+		<option>10am-12pm</option>
+		<option>12pm-2pm</option>
+		<option>2pm-4pm</option>
+		<option>4pm-6pm</option>
+		<option>6pm-8pm</option>
+		<option>8pm-10pm</option>
+	</select>
+	</div>
+	
+	<div>
+		<label for="books">How many books have you read this year?</label>
+		<input type="number" id="age" min="1" max="130" pattern="[0-9]*">
+	</div>
+	
+	<div>
+		<label for="why">Describe your favourite book & author</label>
+		<textarea id="why" class="input-text"></textarea>
+	</div>
+	
+	<fieldset>
+		<legend>How much do you love this genre?</legend>
+		
+		<input type="radio" id="extreme-bad" name="satisfaction">
+		<label for="extreme-bad">Extremely Bad</label>
+		
+		<input type="radio" id="bad" name="satisfaction">
+		<label for="bad">Bad</label>
+		
+		<input type="radio" id="neutral" name="satisfaction">
+		<label for="neutral">It's Okay</label>
+		
+		<input type="radio" id="good" name="satisfaction">
+		<label for="good">Good</label>
+		
+		<input type="radio" id="extreme-good" name="satisfaction">
+		<label for="extreme-good">I love it</label>
+	
+	</fieldset>
+	
+	<button type="submit">Send!</button>
+	
+</form>
+
+</body>
+</html>
